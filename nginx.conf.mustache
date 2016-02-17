@@ -19,6 +19,18 @@ events {
 
 
 http {
+
+    server {
+      listen 80;
+      server_name {{domain}};
+      location / {
+            #The location setting lets you configure how nginx responds to requests for resources within the server.
+            root   html;
+            index  index.html index.htm;
+      }
+
+    }
+
     {{#services}}
     server {
       listen 80;
