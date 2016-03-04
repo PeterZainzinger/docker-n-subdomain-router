@@ -1,6 +1,8 @@
 
 #user  nobody;
 #Defines which Linux system user will own and run the Nginx server
+ client_max_body_size 600M;
+
 
 worker_processes  1;
 #Referes to single threaded process. Generally set to be equal to the number of CPUs or cores.
