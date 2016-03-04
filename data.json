@@ -1,9 +1,3 @@
 {
   "domain": "nerdscheiss.com",
-  "services": [
-    {
-      "subdomain": "docker",
-      "container": "registry"
-    }
-  ]
 }

@@ -1,1 +1,1 @@
-docker run -it -e "CONFIG=$VAR" subdomain-router
+docker run -it -e "CONFIG=$VAR" -p 80:80 subdomain-router
