@@ -21,8 +21,9 @@ events {
 
 http {
 
+    client_max_body_size 600M;
+
     server {
-      client_max_body_size 600M;
       listen 80;
       server_name {{domain}};
       location / {
